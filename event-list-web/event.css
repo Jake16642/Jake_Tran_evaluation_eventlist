@@ -1,0 +1,17 @@
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.event-item__edit svg,
+.event-item__delete svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+button:hover svg {
+    fill: #007bff;
+}
