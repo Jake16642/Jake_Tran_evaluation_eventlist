@@ -48,7 +48,7 @@ class EventController {
     }
 
     setUpDeleteEvent() {
-        this.#view.eventItems.addEventListener("click", (e) => {
+        this.#view.EventList.addEventListener("click", (e) => {
             e.preventDefault();
             if (e.target.classList.contains("event-item__delete")) {
                 const eventId = e.target.parentElement.getAttribute("id");
