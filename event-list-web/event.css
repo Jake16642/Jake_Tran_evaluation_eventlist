@@ -15,3 +15,28 @@ button {
 button:hover svg {
     fill: #007bff;
 }
+
+
+.add-event-form__submit {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-event-form__submit:hover {
+    background-color: #0056b3;
+}
+
+.add-event-form__submit:active {
+    transform: scale(0.95);
+}
+
+.add-event-form__submit:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}

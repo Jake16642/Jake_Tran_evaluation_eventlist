@@ -49,13 +49,12 @@ class EventController {
 
     setUpDeleteEvent() {
         this.#view.EventList.addEventListener("click", (e) => {
-            e.preventDefault();
             if (e.target.classList.contains("event-item__delete")) {
-                const eventId = e.target.parentElement.getAttribute("id");
+                const eventId = e.target.closest(".event-item").getAttribute("id");
 
-                eventAPI.deleteEventAPI(todoId).then(() => {
-                    this.#model.removeEvent(todoId);
-                    this.#view.deleteEvent(todoId);
+                eventAPI.deleteEventAPI(eventId).then(() => {
+                    this.#model.removeEvent(eventId);
+                    this.#view.deleteEvent(eventId);
                 });
             }
         });
